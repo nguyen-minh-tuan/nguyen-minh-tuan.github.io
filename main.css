@@ -317,7 +317,7 @@ h5{
   margin-left: 96px;
   border: none;
 }
-::placeholder { 
+#email::placeholder{ 
   font-family: PlayfairDisplay;
   font-size: 16px;
   line-height: 1.75;
@@ -359,7 +359,7 @@ h5{
   color: #ffffff;
 }
 footer hr{
-  width: 1881px;
+  width: 1920px;
   height: 2px;
   margin: 78px 0 50px;
   background-color: #ececec;
