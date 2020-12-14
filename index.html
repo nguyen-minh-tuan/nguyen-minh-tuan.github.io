@@ -8,13 +8,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Pacifico&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="wrapper">
+	<button onclick="topFunction()" id="scroll" title="Go to top"><i class="fas fa-sort-up"></i></button>
 	<header id="home">
 		<span><b>S</b>mart News</span>
-		<img src="img/1.jpg" alt="profile" id="about">
+		<div data-aos="flip-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">
+<img src="img/1.jpg" alt="profile" id="about"></div>
 		<div class="line l1"></div>
 		<aside>
 			<nav>
@@ -38,46 +43,46 @@
 		<h4>Recent News</h4>
 		<div class="line l2"></div>
 		<div class="container">
-			<div class="box">
+			<div data-aos="fade-right"><div class="box">
 				<img src="img/2.jpg" alt="road">
 				<div class="tag">DESIGN</div>
 				<div class="tag">DOCUMENT</div>
 				<h6>How to Create Cool Pattern In Image Process</h6>
 				<p>By Adam Rose</p><p>16 hours Ago</p>
-			</div>
-			<div class="box">
+			</div></div>
+			<div data-aos="fade-left"><div class="box">
 				<img src="img/14.jpg" alt="violin">
 				<div class="tag">MUSIC</div>
 				<div class="tag">TRAVEL</div>
 				<h6>5 Great lessions you can learn from music</h6>
 				<p>By Adam Rose</p><p>18 hours Ago</p>
-			</div>
-			<div class="box">
+			</div></div>
+			<div data-aos="fade-right"><div class="box">
 				<img src="img/3.jpg" alt="blond">
 				<div class="tag">STYLE</div>
 				<div class="tag">TRAVEL</div>
 				<h6>Fahion Trends fo summer beach party</h6>
 				<p>By Adam Rose</p><p>12 hours Ago</p>
-			</div>
-			<div class="box">
+			</div></div>
+			<div data-aos="fade-left"><div class="box">
 				<img src="img/4.jpg" alt="pink">
 				<div class="tag">DESIGN</div>
 				<div class="tag">TRAVEL</div>
 				<h6>The Ultimate Cheat Sheet on galleries</h6>
 				<p>By Robert Bosch</p><p>09 hours Ago</p>
-			</div>
-			<div class="box b5">
+			</div></div>
+			<div data-aos="fade-right"><div class="box b5">
 				<img src="img/5.png" alt="cloud">
 				<h6>Download  Noticies free invoice templates</h6>
 				<i class="far fa-arrow-alt-circle-down"></i>
-			</div>
-			<div class="box">
+			</div></div>
+			<div data-aos="fade-left"><div class="box">
 				<img src="img/6.jpg" alt="sunglasses">
 				<div class="tag">DESIGN</div>
 				<div class="tag">DOCUMENT</div>
 				<h6>Do your own thing on your own terms</h6>
 				<p>By Shane Watson</p><p>05 hours Ago</p>
-			</div>
+			</div></div>
 		</div>
 		<h8>Interested in more? <a href="#">Load More Stories</a></h8>
 		</div>
@@ -86,24 +91,30 @@
 		<h4>Testimonials</h4>
 		<div class="line l2"></div>
 		<div class="container">
-			<div class="square">
+			<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"><div class="square">
 				<div class="round"><img src="img/7.png" alt="shane"></div>
 				<h7>SHANE WATSON</h7>
 				<hr>
 				<p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam</p>
-			</div>
-			<div class="square">
+			</div></div>
+			<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"><div class="square">
 				<div class="round"><img src="img/9.png" alt="luis"></div>
 				<h7>LUIS GARCIA</h7>
 				<hr>
 				<p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam</p>
-			</div>
-			<div class="square">
+			</div></div>
+			<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"><div class="square">
 				<div class="round"><img src="img/8.png" alt="amy"></div>
 				<h7>AMY ADAMS</h7>
 				<hr>
 				<p>Neque porro quisquam est, qui dolorem ipsum quia consectetur, dolor sit amet, consectetur, numquam</p>
-			</div>
+			</div></div>
 		</div>
 		<div class="container">
 			<figure><img src="img/10.png" alt="focus"></figure>
@@ -113,7 +124,7 @@
 		</div>
 	</section>
 	<section id="contact">
-		<h5>Sign Up For Our Newsletter:</h5>
+		<div data-aos="flip-down"><h5>Sign Up For Our Newsletter:</h5></div>
 		<input id="email" type="email" placeholder="  Your email Address...">
 		<button class="button">SUBSCRIBE</button>
 	</section>
@@ -138,5 +149,32 @@
 		<p><i class="far fa-copyright"></i> Copyright 2020. SmartNews By NH</p>
 	</footer>
 	</div>
+	
+	<script>
+//Get the button
+var mybutton = document.getElementById("scroll");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
